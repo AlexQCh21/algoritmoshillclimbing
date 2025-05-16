@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="shortcut icon" href="images.jpg" type="image/x-icon" />
+    <title>Algoritmos</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="nav_bar">
+        <div class="bar_content container">
+          <img src="images.jpg" alt="Logo de python" />
+          <div class="title">Algoritmos evolutivos</div>
+        </div>
+      </nav>
+
+      <div class="contenido">
+        <section class="bienvenida">
+          <div class="b_contenedor container d-grid">
+            <div class="title">
+              <h1>Algoritmo Evolutivo</h1>
+              <p>
+                Optimización inspirada en la selección natural: trabaja con una
+                población de soluciones, aplicando selección, cruce y mutación
+                para mejorar generación tras generación.
+              </p>
+            </div>
+
+            <div class="image">
+              <div class="code">
+                <div class="barra">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#e3e3e3"
+                  >
+                    <path
+                      d="M280-440h400v-80H280v80ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                    />
+                  </svg>
+                  <svg
+                    class="closed"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#a70000"
+                  >
+                    <path
+                      d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                    />
+                  </svg>
+                </div>
+                <div class="coding">
+                  <span class="word_code">print</span
+                  ><span class="parentesis">(</span>
+                  <span class="texto">"Hello, world!"</span>
+                  <span class="parentesis">)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider container"></div>
+
+        <section class="contenido_ container">
+          <div class="contenedor_cards">
+            <div class="card_">
+              <div class="titulo">¿Qué es?</div>
+              <ul>
+                <li>Método de optimización basado en la selección natural.</li>
+                <li>Opera sobre una población de individuos.</li>
+                <li>Emplea selección, cruce y mutación.</li>
+              </ul>
+            </div>
+
+            <div class="card_">
+              <div class="titulo">Proceso</div>
+              <ul>
+                <li>Inicialización: población aleatoria.</li>
+                <li>Evaluación: cálculo de la aptitud.</li>
+                <li>Selección: elección de padres.</li>
+                <li>Cruce: combinación de genes.</li>
+                <li>Mutación: variaciones aleatorias.</li>
+                <li>Reemplazo: nueva población.</li>
+              </ul>
+            </div>
+
+            <div class="card_">
+              <div class="titulo">Ventajas</div>
+              <ul>
+                <li>Escapa de óptimos locales.</li>
+                <li>Paralelizable.</li>
+                <li>Fácil de adaptar a distintos problemas.</li>
+              </ul>
+            </div>
+
+            <div class="card_">
+              <div class="titulo">Desventajas</div>
+              <ul>
+                <li>Alto costo computacional.</li>
+                <li>Parámetros sensibles.</li>
+                <li>Puede requerir muchas generaciones.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider container"></div>
+
+        <section class="contenido_hill container">
+          <div class="hero">
+            <div class="hero-left">
+              <h1>Hill Climbing</h1>
+              <p>
+                Optimización local que parte de una solución inicial y sube
+                iterativamente por la "colina" hacia estados de mayor valor
+                hasta alcanzar un pico.
+              </p>
+            </div>
+            <div class="hero-right">
+              <div class="card">
+                <h2>¿Qué es?</h2>
+                <ul>
+                  <li>Algoritmo de búsqueda heurística.</li>
+                  <li>Mueve de forma greed a la mejor solución vecina.</li>
+                  <li>Detiene al no encontrar mejora.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h2>Proceso</h2>
+                <ul>
+                  <li>Inicio: estado inicial.</li>
+                  <li>Evalúa vecinos.</li>
+                  <li>Selecciona mejor vecino.</li>
+                  <li>Actualiza si hay mejora.</li>
+                  <li>Repite hasta máximo local.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h2>Ventajas</h2>
+                <ul>
+                  <li>Sencillo de implementar.</li>
+                  <li>Bajo uso de memoria.</li>
+                  <li>Rápido en entornos bien comportados.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h2>Desventajas</h2>
+                <ul>
+                  <li>Óptimos locales.</li>
+                  <li>No explora amplio.</li>
+                  <li>Mesetas y cimas falsas.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider container"></div>
+
+        <section class="contenido_organizador container d-grid">
+          <div class="contexto">
+            <div class="title">
+              Organizador Visual
+              <div class="leyenda">
+                Para una mejor comprensión de Hill Climbing
+              </div>
+            </div>
+
+            <!-- <div class="description">
+              La importancia del organizador visual en el tema de Hill Climbing
+              radica en su capacidad para representar de forma clara y
+              simplificada el proceso de búsqueda de soluciones. Permite
+              visualizar cómo el algoritmo se mueve por el espacio de
+              soluciones, identificando máximos locales, pasos de mejora y
+              posibles estancamientos. Esto facilita la comprensión de su
+              funcionamiento, fortalezas y limitaciones, especialmente en
+              comparación con otros métodos de optimización.
+            </div> -->
+          </div>
+          <div class="organizador_visual">
+            <img src="organizador.png" alt="" />
+            <div class="icon_expandir">
+              <i class="bi bi-arrows-angle-expand"></i>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider container"></div>
+
+        <!-- Sección ejercicios -->
+        <section class="contenedor_ejercicios container">
+          <div class="title">Ejercicios</div>
+
+          <div class="ejercicios d-grid">
+            <!-- Ejercicio 1 -->
+            <div class="ejercicio">
+              <div class="enunciado">
+                <div class="title">
+                  Ejercico 1: Optimización del Horario de Estudio
+                </div>
+                <div class="conteinder_enun">
+                  <div class="informacion">
+                    <p>
+                      Un estudiante tiene disponibles 10 franjas horarias libres
+                      durante la semana, cada una con una duración y un nivel
+                      estimado de productividad (del 1 al 10). El objetivo es
+                      seleccionar las mejores franjas para maximizar su
+                      productividad semanal total, pero con una restricción: no
+                      debe estudiar más de 15 horas en total. Implementa un
+                      algoritmo de hill climbing que, partiendo de una selección
+                      aleatoria de franjas horarias, busque mejorar la
+                      productividad total sin superar el límite de horas. Usa
+                      Pandas para representar las franjas y NumPy para mutar la
+                      solución.
+                    </p>
+                    <div class="explicacion_">
+                      <div class="title">Explicación</div>
+                      <strong>1. Importaciones y datos</strong>
+                      <br><br>
+                      <div class="fragmento_cod">
+                        <div class="barra">
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                        </div>
+                        <div class="codigo_">
+                          <pre><code>
+<span class="keyword">import</span> <span class="module">pandas</span> <span class="keyword">as</span> <span class="alias">pd</span>
+<span class="keyword">import</span> <span class="module">numpy</span> <span class="keyword">as</span> <span class="alias">np</span>
+</code></pre>
+                        </div>
+                      </div>
+
+                      Se importan las librerías Pandas y NumPy para trabajar con
+                      datos y operaciones numéricas.
+                      <div class="fragmento_cod">
+                        <div class="barra">
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                        </div>
+                        <div class="codigo_">
+                          <pre><code>
+<span class="variable">franjas</span> <span class="operator">=</span> <span class="alias">pd</span>.<span class="function">DataFrame</span>({  
+    <span class="string">'id'</span>: <span class="function">range</span>(<span class="number">1</span>, <span class="number">11</span>),  
+    <span class="string">'duracion'</span>: [<span class="operator">...</span>],  
+    <span class="string">'productividad'</span>: [<span class="operator">...</span>]  
+})
+</code></pre>
+                        </div>
+                      </div>
+
+                      Se crea un DataFrame con 10 franjas horarias. Cada una
+                      tiene una duración (en horas) y un nivel de productividad.
+
+                      <br /><strong>2. Parámetros del algoritmo</strong>
+                      <br />MAX_HORAS = 15 <br />MAX_ITERACIONES = 1000
+                      <br /><strong>3. Función calcular_productividad</strong>
+                      <br />Recibe una selección binaria (0 o 1 por franja),
+                      suma las horas y productividad de las franjas
+                      seleccionadas, y devuelve la productividad total. Si se
+                      pasan de las horas permitidas, devuelve −∞ como
+                      penalización. <br /><strong
+                        >4. Función generar_solucion_inicial</strong
+                      >
+                      <br />Genera una solución aleatoria (con 0s y 1s) que no
+                      supere el máximo de horas. <br /><strong
+                        >5. Algoritmo principal hill_climbing</strong
+                      >
+                      <br />
+                      <ul>
+                        <li>Parte de una solución inicial válida.</li>
+                        <li>
+                          Itera generando "vecinos" (soluciones similares con un
+                          cambio).
+                        </li>
+                        <li>
+                          Si el vecino tiene mejor productividad, lo acepta como
+                          nuevo actual.
+                        </li>
+                        <li>Al final devuelve la mejor solución encontrada.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="fragmento_cod">
+                    <div class="barra">
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                    </div>
+                    <div class="codigo_">
+                      <pre><code>
+<span class="keyword">import</span> <span class="builtin">pandas</span> <span class="keyword">as</span> <span class="builtin">pd</span>
+<span class="keyword">import</span> <span class="builtin">numpy</span> <span class="keyword">as</span> <span class="builtin">np</span>
+
+<span class="builtin">franjas</span> = <span class="builtin">pd</span>.DataFrame({
+    <span class="string">'id'</span>: <span class="builtin">range</span>(<span class="number">1</span>, <span class="number">11</span>),
+    <span class="string">'duracion'</span>: [<span class="number">2</span>, <span class="number">1.5</span>, <span class="number">3</span>, <span class="number">2.5</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1.5</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>],
+    <span class="string">'productividad'</span>: [<span class="number">7</span>, <span class="number">5</span>, <span class="number">9</span>, <span class="number">6</span>, <span class="number">4</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">10</span>, <span class="number">7</span>, <span class="number">6</span>]
+})
+
+<span class="builtin">MAX_HORAS</span> = <span class="number">15</span>
+<span class="builtin">MAX_ITERACIONES</span> = <span class="number">1000</span>
+
+<span class="keyword">def</span> <span class="function">calcular_productividad</span>(seleccion, df_franjas):
+    elegidas = df_franjas[seleccion == <span class="number">1</span>]
+    horas_totales = elegidas[<span class="string">'duracion'</span>].sum()
+    prod_total = elegidas[<span class="string">'productividad'</span>].sum()
+    <span class="keyword">if</span> horas_totales > MAX_HORAS:
+        <span class="keyword">return</span> -np.inf
+    <span class="keyword">return</span> prod_total
+
+<span class="keyword">def</span> <span class="function">generar_solucion_inicial</span>(df_franjas):
+    n = <span class="builtin">len</span>(df_franjas)
+    <span class="keyword">while</span> <span class="keyword">True</span>:
+        solucion = np.random.randint(<span class="number">0</span>, <span class="number">2</span>, size=n)
+        <span class="keyword">if</span> df_franjas[<span class="string">'duracion'</span>][solucion == <span class="number">1</span>].sum() <= MAX_HORAS:
+            <span class="keyword">return</span> solucion
+
+<span class="keyword">def</span> <span class="function">hill_climbing</span>(df_franjas):
+    actual = generar_solucion_inicial(df_franjas)
+    puntaje_actual = calcular_productividad(actual, df_franjas)
+
+    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="builtin">range</span>(MAX_ITERACIONES):
+        vecino = actual.copy()
+        indice = np.random.randint(<span class="number">0</span>, <span class="builtin">len</span>(df_franjas))
+        vecino[indice] = <span class="number">1</span> - vecino[indice]
+        puntaje_vecino = calcular_productividad(vecino, df_franjas)
+        <span class="keyword">if</span> puntaje_vecino > puntaje_actual:
+            actual, puntaje_actual = vecino, puntaje_vecino
+
+    <span class="keyword">return</span> actual, puntaje_actual
+
+<span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:
+    mejor_solucion, mejor_puntaje = hill_climbing(franjas)
+    seleccionadas = franjas[mejor_solucion == <span class="number">1</span>]
+    <span class="builtin">print</span>(<span class="string">"Franjas seleccionadas óptimas:"</span>)
+    <span class="builtin">print</span>(seleccionadas)
+    <span class="builtin">print</span>(<span class="string">f"Horas totales: {seleccionadas['duracion'].sum()}"</span>)
+    <span class="builtin">print</span>(<span class="string">f"Productividad total: {mejor_puntaje}"</span>)
+</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="explicacion">
+                <div class="title">Salida</div>
+                <div class="exp">
+                  <div class="fragmento_cod">
+                    <div class="barra">
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                    </div>
+                    <div class="codigo_">
+                      <pre><code>
+Franjas seleccionadas óptimas:
+   id  duracion  productividad
+0   1       2.0              7
+1   2       1.5              5
+2   3       3.0              9
+3   4       2.5              6
+4   5       1.0              4
+5   6       2.0              8
+8   9       2.0              7
+9  10       1.0              6
+Horas totales: 15.0
+Productividad total: 52
+</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ejercicio 2 -->
+            <div class="ejercicio">
+              <div class="enunciado">
+                <div class="title">
+                  Ejercico 2: Selección óptima de platos en el menú
+                  universitario
+                </div>
+                <div class="conteinder_enun">
+                  <div class="informacion">
+                    <p>
+                      En la cafetería universitaria hay 8 platos diferentes.
+                      Cada plato tiene un precio, una cantidad de calorías y una
+                      puntuación de satisfacción (según encuestas de
+                      estudiantes). Un estudiante solo tiene S/20 para gastar
+                      por día y quiere obtener el máximo nivel de satisfacción
+                      sin pasarse del presupuesto ni consumir más de 1000
+                      calorías. Utiliza Pandas para representar el menú y NumPy
+                      para generar combinaciones de platos. Aplica hill climbing
+                      para encontrar la mejor combinación de 3 platos que
+                      maximicen la satisfacción bajo las restricciones
+                      indicadas.
+                    </p>
+                    <div class="explicacion_">
+                      <div class="title">Explicación</div>
+
+                      <strong>1. Importaciones y datos</strong>
+                      <div class="fragmento_cod">
+                        <div class="barra">
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                        </div>
+                        <div class="codigo_">
+                          <pre><code>
+<span class="keyword">import</span> <span class="module">pandas</span> <span class="keyword">as</span> <span class="alias">pd</span>
+<span class="keyword">import</span> <span class="module">numpy</span> <span class="keyword">as</span> <span class="alias">np</span>
+</code></pre>
+                        </div>
+                      </div>
+
+                      Se importan las librerías Pandas y NumPy para trabajar con
+                      datos y operaciones numéricas.
+
+                      <div class="fragmento_cod">
+                        <div class="barra">
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                        </div>
+                        <div class="codigo_">
+                          <pre><code>
+menu = pd.DataFrame({
+    <span class="string">'id'</span>: <span class="function">range</span>(1, 9),
+    <span class="string">'precio'</span>: [5.5, 6.0, 4.0, 7.5, 3.5, 8.0, 5.0, 6.5],
+    <span class="string">'calorias'</span>: [450, 550, 300, 700, 250, 800, 400, 600],
+    <span class="string">'satisfaccion'</span>: [7, 8, 5, 9, 4, 10, 6, 8]
+})
+</code></pre>
+                        </div>
+                      </div>
+
+                      Se crea un DataFrame llamado <code>menu</code> con 8
+                      platos, donde cada plato tiene un identificador, precio,
+                      calorías y un nivel de satisfacción.
+
+                      <br /><strong>2. Parámetros del problema</strong> <br />Se
+                      definen las restricciones del problema: <br /><code
+                        >PRESUPUESTO_MAX = 20</code
+                      >
+                      (presupuesto máximo en soles) <br /><code
+                        >CALORIAS_MAX = 1000</code
+                      >
+                      (calorías máximas permitidas) <br /><code
+                        >MAX_ITERACIONES = 1000</code
+                      >
+                      (número máximo de iteraciones del algoritmo)
+
+                      <br /><strong>3. Función calcular_satisfaccion</strong>
+                      <br />Esta función recibe una solución binaria (array con
+                      0 y 1) que indica qué platos están seleccionados.
+                      <ul>
+                        <li>Extrae los platos seleccionados del DataFrame.</li>
+                        <li>
+                          Verifica que exactamente 3 platos hayan sido
+                          seleccionados; si no, penaliza con −∞.
+                        </li>
+                        <li>
+                          Calcula el total de precio, calorías y satisfacción de
+                          los platos seleccionados.
+                        </li>
+                        <li>
+                          Si se excede el presupuesto o las calorías, penaliza
+                          con −∞.
+                        </li>
+                        <li>
+                          Si la solución es válida, retorna la suma total de
+                          satisfacción.
+                        </li>
+                      </ul>
+
+                      <br /><strong>4. Función generar_solucion_inicial</strong>
+                      <br />Genera aleatoriamente una solución inicial con
+                      exactamente 3 platos seleccionados que cumpla las
+                      restricciones de presupuesto y calorías.
+
+                      <br /><strong
+                        >5. Algoritmo principal hill_climbing</strong
+                      >
+                      <ul>
+                        <li>
+                          Parte de una solución inicial válida generada
+                          aleatoriamente.
+                        </li>
+                        <li>
+                          Por cada iteración, genera una solución vecina
+                          intercambiando un plato seleccionado por uno no
+                          seleccionado.
+                        </li>
+                        <li>
+                          Calcula la satisfacción del vecino y si es mejor que
+                          la actual, acepta el cambio.
+                        </li>
+                        <li>
+                          Después de todas las iteraciones, devuelve la mejor
+                          solución encontrada y su puntaje.
+                        </li>
+                      </ul>
+
+                      <br /><strong>6. Ejecución principal</strong> <br />Se
+                      ejecuta el algoritmo, muestra los platos seleccionados, el
+                      costo total, las calorías y la satisfacción total de la
+                      mejor solución encontrada.
+                    </div>
+                  </div>
+
+                  <div class="fragmento_cod">
+                    <div class="barra">
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                    </div>
+                    <div class="codigo_">
+                      <pre><code>
+<span class="keyword">import</span> pandas <span class="keyword">as</span> pd
+<span class="keyword">import</span> numpy <span class="keyword">as</span> np
+
+menu = pd.DataFrame({
+    <span class="string">'id'</span>: <span class="function">range</span>(1, 9),
+    <span class="string">'precio'</span>: [5.5, 6.0, 4.0, 7.5, 3.5, 8.0, 5.0, 6.5],
+    <span class="string">'calorias'</span>: [450, 550, 300, 700, 250, 800, 400, 600],
+    <span class="string">'satisfaccion'</span>: [7, 8, 5, 9, 4, 10, 6, 8]
+})
+
+PRESUPUESTO_MAX = 20
+CALORIAS_MAX = 1000
+MAX_ITERACIONES = 1000
+
+<span class="keyword">def</span> <span class="function">calcular_satisfaccion</span>(solucion, df_menu):
+    seleccion = df_menu[solucion == 1]
+    <span class="keyword">if</span> <span class="function">len</span>(seleccion) != 3:
+        <span class="keyword">return</span> -np.inf
+    total_precio = seleccion[<span class="string">'precio'</span>].sum()
+    total_calorias = seleccion[<span class="string">'calorias'</span>].sum()
+    total_sat = seleccion[<span class="string">'satisfaccion'</span>].sum()
+    <span class="keyword">if</span> total_precio &gt; PRESUPUESTO_MAX <span class="keyword">or</span> total_calorias &gt; CALORIAS_MAX:
+        <span class="keyword">return</span> -np.inf
+    <span class="keyword">return</span> total_sat
+
+<span class="keyword">def</span> <span class="function">generar_solucion_inicial</span>(df_menu):
+    n = <span class="function">len</span>(df_menu)
+    <span class="keyword">while</span> <span class="keyword">True</span>:
+        sol = np.zeros(n, dtype=<span class="keyword">int</span>)
+        indices = np.random.choice(n, 3, replace=<span class="keyword">False</span>)
+        sol[indices] = 1
+        <span class="keyword">if</span> calcular_satisfaccion(sol, df_menu) != -np.inf:
+            <span class="keyword">return</span> sol
+
+<span class="keyword">def</span> <span class="function">hill_climbing</span>(df_menu):
+    actual = generar_solucion_inicial(df_menu)
+    puntaje_actual = calcular_satisfaccion(actual, df_menu)
+
+    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="function">range</span>(MAX_ITERACIONES):
+        vecino = actual.copy()
+        dentro = np.where(vecino == 1)[0]
+        fuera = np.where(vecino == 0)[0]
+        i = np.random.choice(dentro)
+        j = np.random.choice(fuera)
+        vecino[i], vecino[j] = 0, 1
+
+        puntaje_vecino = calcular_satisfaccion(vecino, df_menu)
+        <span class="keyword">if</span> puntaje_vecino &gt; puntaje_actual:
+            actual, puntaje_actual = vecino, puntaje_vecino
+
+    <span class="keyword">return</span> actual, puntaje_actual
+
+<span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:
+    mejor_sol, mejor_puntaje = hill_climbing(menu)
+    seleccionada = menu[mejor_sol == 1]
+    <span class="builtin">print</span>(<span class="string">"Platos seleccionados óptimos (3):"</span>)
+    <span class="builtin">print</span>(seleccionada)
+    <span class="builtin">print</span>(f<span class="string">"Costo total: S/{seleccionada['precio'].sum():.2f}"</span>)
+    <span class="builtin">print</span>(f<span class="string">"Calorías totales: {seleccionada['calorias'].sum()}"</span>)
+    <span class="builtin">print</span>(f<span class="string">"Satisfacción total: {mejor_puntaje}"</span>)
+    </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="explicacion">
+                <div class="title">Salida</div>
+                <div class="exp">
+                  <div class="fragmento_cod">
+                    <div class="barra">
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                    </div>
+                    <div class="codigo_">
+                      <pre><code>
+Platos seleccionados óptimos (3):
+   id  precio  calorias  satisfaccion
+0   1     5.5       450             7
+2   3     4.0       300             5
+4   5     3.5       250             4
+Costo total: S/13.00
+Calorías totales: 1000
+Satisfacción total: 16
+    </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ejercicio 3 -->
+            <div class="ejercicio">
+              <div class="enunciado">
+                <div class="title">Ejercico 3: Elección de cursos electivos según afinidad y tiempo</div>
+                <div class="conteinder_enun">
+                  <div class="informacion">
+                    <p>
+                      Un estudiante debe elegir 3 de entre 10 cursos electivos
+                      posibles. Cada curso tiene una carga horaria semanal, un
+                      nivel de interés personal (del 1 al 10), y una
+                      calificación histórica promedio (como estimador de
+                      facilidad). El objetivo es encontrar una combinación de
+                      cursos que maximice el interés total del estudiante,
+                      siempre que la carga horaria combinada no exceda 12 horas
+                      semanales. Usa Pandas para estructurar los datos de los
+                      cursos y NumPy para buscar combinaciones óptimas usando un
+                      enfoque de hill climbing.
+                    </p>
+                    <div class="explicacion_">
+                      <div class="title">Explicación</div>
+                      <strong>1. Importaciones y datos</strong>
+                      <div class="fragmento_cod">
+                        <div class="barra">
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                        </div>
+                        <div class="codigo_">
+                          <pre><code>
+<span class="keyword">import</span> <span class="module">pandas</span> <span class="keyword">as</span> <span class="alias">pd</span>
+<span class="keyword">import</span> <span class="module">numpy</span> <span class="keyword">as</span> <span class="alias">np</span>
+</code></pre>
+                        </div>
+                      </div>
+
+                      Se importan las librerías Pandas y NumPy para trabajar con
+                      datos y operaciones numéricas.
+
+                      <div class="fragmento_cod">
+                        <div class="barra">
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                          <div class="btn_"></div>
+                        </div>
+                        <div class="codigo_">
+                          <pre><code>
+<span class="variable">franjas</span> <span class="operator">=</span> <span class="alias">pd</span>.<span class="function">DataFrame</span>({  
+    <span class="string">'id'</span>: <span class="function">range</span>(<span class="number">1</span>, <span class="number">11</span>),  
+    <span class="string">'duracion'</span>: [<span class="number">2</span>, <span class="number">1.5</span>, <span class="number">3</span>, <span class="number">2.5</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">1.5</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>],  
+    <span class="string">'productividad'</span>: [<span class="number">7</span>, <span class="number">5</span>, <span class="number">9</span>, <span class="number">6</span>, <span class="number">4</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">10</span>, <span class="number">7</span>, <span class="number">6</span>]  
+})
+</code></pre>
+                        </div>
+                      </div>
+
+                      Se crea un DataFrame con 10 franjas horarias. Cada una
+                      tiene una duración (en horas) y un nivel de productividad.
+
+                      <br /><strong>2. Parámetros del algoritmo</strong>
+                      <br /><code>MAX_HORAS = 15</code> <br /><code
+                        >MAX_ITERACIONES = 1000</code
+                      >
+                      <br />
+                      <strong>3. Función calcular_productividad</strong>
+                      <br />
+                      Recibe una selección binaria (0 o 1 por franja), suma las
+                      horas y productividad de las franjas seleccionadas, y
+                      devuelve la productividad total. Si se pasan de las horas
+                      permitidas, devuelve −∞ como penalización.
+                      <br />
+                      <strong>4. Función generar_solucion_inicial</strong>
+                      <br />
+                      Genera una solución aleatoria (con 0s y 1s) que no supere
+                      el máximo de horas.
+                      <br />
+                      <strong>5. Algoritmo principal hill_climbing</strong>
+                      <br />
+                      <ul>
+                        <li>Parte de una solución inicial válida.</li>
+                        <li>
+                          Itera generando "vecinos" (soluciones similares con un
+                          cambio).
+                        </li>
+                        <li>
+                          Si el vecino tiene mejor productividad, lo acepta como
+                          nuevo actual.
+                        </li>
+                        <li>Al final devuelve la mejor solución encontrada.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="fragmento_cod">
+                    <div class="barra">
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                    </div>
+                    <div class="codigo_">
+                      <pre><code>
+<span class="keyword">import</span> <span class="module">pandas</span> <span class="keyword">as</span> <span class="alias">pd</span>
+<span class="keyword">import</span> <span class="module">numpy</span> <span class="keyword">as</span> <span class="alias">np</span>
+
+<span class="variable">cursos</span> <span class="operator">=</span> <span class="alias">pd</span>.<span class="function">DataFrame</span>({
+    <span class="string">'id'</span>: <span class="function">range</span>(<span class="number">1</span>, <span class="number">11</span>),
+    <span class="string">'carga_horaria'</span>: [<span class="number">3</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">1.5</span>, <span class="number">2.5</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">3.5</span>, <span class="number">2</span>],
+    <span class="string">'interes'</span>: [<span class="number">8</span>, <span class="number">6</span>, <span class="number">9</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">10</span>, <span class="number">6</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">7</span>],
+    <span class="string">'facilidad'</span>: [<span class="number">7</span>, <span class="number">8</span>, <span class="number">6</span>, <span class="number">9</span>, <span class="number">7</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">6</span>, <span class="number">8</span>]
+})
+
+<span class="variable">MAX_CARGA</span> <span class="operator">=</span> <span class="number">12</span>
+<span class="variable">NUM_ELECTIVOS</span> <span class="operator">=</span> <span class="number">3</span>
+<span class="variable">MAX_ITER</span> <span class="operator">=</span> <span class="number">1000</span>
+
+<span class="keyword">def</span> <span class="function">calcular_puntaje</span>(<span class="parameter">sol, df</span>):
+    <span class="variable">sel</span> <span class="operator">=</span> <span class="variable">df</span>[<span class="variable">sol</span> <span class="operator">==</span> <span class="number">1</span>]
+    <span class="keyword">if</span> <span class="function">len</span>(<span class="variable">sel</span>) <span class="operator">!=</span> <span class="variable">NUM_ELECTIVOS</span>:
+        <span class="keyword">return</span> <span class="built_in">-np.inf</span>
+    <span class="variable">total_carga</span> <span class="operator">=</span> <span class="variable">sel</span>[<span class="string">'carga_horaria'</span>].<span class="function">sum</span>()
+    <span class="variable">total_interes</span> <span class="operator">=</span> <span class="variable">sel</span>[<span class="string">'interes'</span>].<span class="function">sum</span>()
+    <span class="keyword">if</span> <span class="variable">total_carga</span> <span class="operator">&gt;</span> <span class="variable">MAX_CARGA</span>:
+        <span class="keyword">return</span> <span class="built_in">-np.inf</span>
+    <span class="keyword">return</span> <span class="variable">total_interes</span>
+
+<span class="keyword">def</span> <span class="function">generar_inicial</span>(<span class="parameter">df</span>):
+    <span class="variable">n</span> <span class="operator">=</span> <span class="function">len</span>(<span class="variable">df</span>)
+    <span class="keyword">while</span> <span class="literal">True</span>:
+        <span class="variable">sol</span> <span class="operator">=</span> <span class="function">np.zeros</span>(<span class="variable">n</span>, <span class="parameter">dtype</span><span class="operator">=</span><span class="keyword">int</span>)
+        <span class="variable">idx</span> <span class="operator">=</span> <span class="function">np.random.choice</span>(<span class="variable">n</span>, <span class="variable">NUM_ELECTIVOS</span>, <span class="parameter">replace</span><span class="operator">=</span><span class="literal">False</span>)
+        <span class="variable">sol</span>[<span class="variable">idx</span>] <span class="operator">=</span> <span class="number">1</span>
+        <span class="keyword">if</span> <span class="function">calcular_puntaje</span>(<span class="variable">sol</span>, <span class="variable">df</span>) <span class="operator">!=</span> <span class="built_in">-np.inf</span>:
+            <span class="keyword">return</span> <span class="variable">sol</span>
+
+<span class="keyword">def</span> <span class="function">hill_climbing</span>(<span class="parameter">df</span>):
+    <span class="variable">actual</span> <span class="operator">=</span> <span class="function">generar_inicial</span>(<span class="variable">df</span>)
+    <span class="variable">score_actual</span> <span class="operator">=</span> <span class="function">calcular_puntaje</span>(<span class="variable">actual</span>, <span class="variable">df</span>)
+
+    <span class="keyword">for</span> <span class="operator">_</span> <span class="keyword">in</span> <span class="function">range</span>(<span class="variable">MAX_ITER</span>):
+        <span class="variable">vecino</span> <span class="operator">=</span> <span class="variable">actual</span>.<span class="function">copy</span>()
+        <span class="variable">dentro</span> <span class="operator">=</span> <span class="function">np.where</span>(<span class="variable">vecino</span> <span class="operator">==</span> <span class="number">1</span>)[<span class="number">0</span>]
+        <span class="variable">fuera</span> <span class="operator">=</span> <span class="function">np.where</span>(<span class="variable">vecino</span> <span class="operator">==</span> <span class="number">0</span>)[<span class="number">0</span>]
+        <span class="variable">i</span> <span class="operator">=</span> <span class="function">np.random.choice</span>(<span class="variable">dentro</span>)
+        <span class="variable">j</span> <span class="operator">=</span> <span class="function">np.random.choice</span>(<span class="variable">fuera</span>)
+        <span class="variable">vecino</span>[<span class="variable">i</span>], <span class="variable">vecino</span>[<span class="variable">j</span>] <span class="operator">=</span> <span class="number">0</span>, <span class="number">1</span>
+
+        <span class="variable">score_vecino</span> <span class="operator">=</span> <span class="function">calcular_puntaje</span>(<span class="variable">vecino</span>, <span class="variable">df</span>)
+        <span class="keyword">if</span> <span class="variable">score_vecino</span> <span class="operator">&gt;</span> <span class="variable">score_actual</span>:
+            <span class="variable">actual</span>, <span class="variable">score_actual</span> <span class="operator">=</span> <span class="variable">vecino</span>, <span class="variable">score_vecino</span>
+
+    <span class="keyword">return</span> <span class="variable">actual</span>, <span class="variable">score_actual</span>
+
+<span class="keyword">if</span> <span class="variable">__name__</span> <span class="operator">==</span> <span class="string">'__main__'</span>:
+    <span class="variable">mejor_sol</span>, <span class="variable">mejor_score</span> <span class="operator">=</span> <span class="function">hill_climbing</span>(<span class="variable">cursos</span>)
+    <span class="variable">seleccionados</span> <span class="operator">=</span> <span class="variable">cursos</span>[<span class="variable">mejor_sol</span> <span class="operator">==</span> <span class="number">1</span>]
+    <span class="built_in">print</span>(<span class="string">"Cursos electivos seleccionados:"</span>)
+    <span class="built_in">print</span>(<span class="variable">seleccionados</span>)
+    <span class="built_in">print</span>(<span class="string">f"Carga horaria total: <br>{seleccionados['carga_horaria'].sum()} h/sem"</span>)
+<span class="built_in">print</span>(<span class="string">f"Interés total: {mejor_score}"</span>)
+</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="explicacion">
+                <div class="title">Salida</div>
+                <div class="exp">
+                  <div class="fragmento_cod">
+                    <div class="barra">
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                      <div class="btn_"></div>
+                    </div>
+                    <div class="codigo_">
+                      <pre><code>
+Cursos electivos seleccionados:
+   id  carga_horaria  interes  facilidad
+2   3            4.0        9          6
+5   6            3.0       10          5
+8   9            3.5        9          6
+Carga horaria total: 10.5 h/sem
+Interés total: 28
+    </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider container"></div>
+
+        <section class="contenido_autores container d-grid">
+          <div class="title_autores">Programadores</div>
+          <div class="conteniner_user">
+            <div class="card_user">
+              <div class="foto">
+                <img src="images.png" alt="" />
+              </div>
+
+              <div class="informacion">
+                <div class="nombre dato">
+                  <strong>Nombres: </strong><span>Cesar Alexander</span>
+                </div>
+                <div class="apellido dato">
+                  <strong>Apellidos: </strong><span>Quezada Chorres</span>
+                </div>
+                <div class="codigo dato">
+                  <strong>Código: </strong><span>0202114049</span>
+                </div>
+                <div class="carrera dato">
+                  <strong>Escuela: </strong
+                  ><span>Ing. de Sistemas e Informática</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_user">
+              <div class="foto">
+                <img src="images.png" alt="" />
+              </div>
+
+              <div class="informacion">
+                <div class="nombre dato">
+                  <strong>Nombres: </strong><span>David Emanuel</span>
+                </div>
+                <div class="apellido dato">
+                  <strong>Apellidos: </strong><span>Rojas Jimenez</span>
+                </div>
+                <div class="codigo dato">
+                  <strong>Código: </strong><span>0202114051</span>
+                </div>
+                <div class="carrera dato">
+                  <strong>Escuela: </strong
+                  ><span>Ing. de Sistemas e Informática</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="imagen_expandida mostrar d-none">
+      <img src="organizador.png" alt="" />
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
